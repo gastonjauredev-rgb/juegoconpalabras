@@ -1,0 +1,155 @@
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.footer {
+  width: 100%;
+  padding: 75px 24px 25px;
+  background: var(--color-background);
+  color: var(--color-text);
+}
+
+.footer__container {
+  width: min(1240px, 100%);
+  margin: 0 auto;
+}
+
+.footer__main {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 80px;
+  padding-bottom: 55px;
+}
+
+.footer__brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 22px;
+  font-size: 21px;
+  font-weight: 800;
+  line-height: 1.3;
+}
+
+.footer__brand span {
+  color: var(--color-coral);
+  font-size: 30px;
+}
+
+.footer__identity > p {
+  max-width: 460px;
+  color: var(--color-text-secondary);
+  font-size: 15px;
+  line-height: 1.9;
+}
+
+.footer__navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 13px;
+}
+
+.footer__navigation h2 {
+  margin-bottom: 10px;
+  font-size: 17px;
+  color: var(--color-text);
+}
+
+.footer__navigation a {
+  color: var(--color-text-secondary);
+  font-size: 14px;
+  transition: color 0.2s ease;
+}
+
+.footer__navigation a:hover {
+  color: var(--color-coral);
+}
+
+/* =========================================
+   PARTE INFERIOR
+========================================= */
+
+.footer__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding-top: 25px;
+  border-top: 1px solid rgba(41, 38, 64, 0.18);
+}
+
+.footer__bottom p {
+  color: var(--color-text-secondary);
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+/* =========================================
+   ACCESO ADMINISTRATIVO
+========================================= */
+
+.footer__admin-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 34px;
+  height: 34px;
+  padding: 0;
+  border: 1px solid rgba(41, 38, 64, 0.2);
+  border-radius: 50%;
+  background: transparent;
+  color: var(--color-text-secondary);
+  font-size: 20px;
+  line-height: 1;
+  cursor: pointer;
+  transition:
+    color 0.2s ease,
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.footer__admin-button:hover {
+  color: var(--color-coral);
+  background: rgba(255, 255, 255, 0.3);
+  border-color: var(--color-coral);
+  transform: rotate(30deg);
+}
+
+.footer__admin-button:focus-visible {
+  outline: 2px solid var(--color-coral);
+  outline-offset: 4px;
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 700px) {
+  .footer {
+    padding: 55px 22px 25px;
+  }
+
+  .footer__main {
+    grid-template-columns: 1fr;
+    gap: 45px;
+    padding-bottom: 40px;
+  }
+
+  .footer__bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .footer__brand {
+    font-size: 18px;
+  }
+
+  .footer__admin-button {
+    align-self: flex-end;
+  }
+}

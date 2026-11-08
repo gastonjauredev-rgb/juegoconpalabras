@@ -1,0 +1,113 @@
+
+/* =========================================
+   MÚSICA Y DANZA
+========================================= */
+
+.music-page {
+  width: 100%;
+  min-height: 100vh;
+  background: #faf9f6;
+}
+
+.music-page__container {
+  width: min(1240px, calc(100% - 48px));
+  margin: 0 auto;
+}
+
+/* HERO */
+
+.music-page__hero {
+  padding: 90px 0;
+  background: linear-gradient(
+    135deg,
+    #fff0e9 0%,
+    #ffe3da 55%,
+    #f3e8ff 100%
+  );
+}
+
+.music-page__eyebrow {
+  display: inline-block;
+  margin-bottom: 20px;
+  color: #d87568;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.music-page__hero h1 {
+  margin-bottom: 22px;
+  color: #34314c;
+  font-size: clamp(38px, 5vw, 64px);
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.music-page__hero p {
+  max-width: 700px;
+  color: #6f6b7e;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+/* GALERÍA DE VIDEOS */
+
+.music-page__videos {
+  padding: 90px 0 120px;
+}
+
+.music-page__heading {
+  max-width: 760px;
+  margin-bottom: 45px;
+}
+
+.music-page__heading h2 {
+  margin-bottom: 16px;
+  color: #34314c;
+  font-size: clamp(28px, 4vw, 40px);
+  line-height: 1.25;
+}
+
+.music-page__heading p {
+  color: #777386;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.music-page__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: stretch;
+  gap: 28px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1000px) {
+  .music-page__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 650px) {
+  .music-page__container {
+    width: calc(100% - 36px);
+  }
+
+  .music-page__hero {
+    padding: 65px 0;
+  }
+
+  .music-page__hero p {
+    font-size: 16px;
+  }
+
+  .music-page__videos {
+    padding: 65px 0 85px;
+  }
+
+  .music-page__grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}

@@ -1,0 +1,151 @@
+
+/* =========================================
+   RIDDLES PAGE
+========================================= */
+
+.riddles-page {
+  width: 100%;
+  min-height: 100vh;
+  background: #faf9f6;
+}
+
+.riddles-page__container {
+  width: min(1240px, calc(100% - 48px));
+  margin: 0 auto;
+}
+
+/* HERO */
+
+.riddles-page__hero {
+  padding: 90px 0;
+  background: linear-gradient(
+    135deg,
+    #fff5cd 0%,
+    #fff0bb 55%,
+    #fce8dc 100%
+  );
+}
+
+.riddles-page__eyebrow {
+  display: inline-block;
+  margin-bottom: 18px;
+  color: #a17a0d;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.riddles-page__hero h1 {
+  margin-bottom: 22px;
+  color: #3f3659;
+  font-size: clamp(38px, 5vw, 64px);
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.riddles-page__hero p {
+  max-width: 720px;
+  color: #716445;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+/* ADIVINANZAS */
+
+.riddles-page__activities {
+  padding: 90px 0 110px;
+}
+
+.riddles-page__heading {
+  max-width: 780px;
+  margin-bottom: 45px;
+}
+
+.riddles-page__heading h2 {
+  margin-bottom: 18px;
+  color: #3f3659;
+  font-size: clamp(28px, 4vw, 40px);
+  line-height: 1.25;
+}
+
+.riddles-page__heading p {
+  color: #777386;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.riddles-page__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: stretch;
+  gap: 28px;
+}
+
+/* PROPUESTA PARA FAMILIAS */
+
+.riddles-page__family {
+  padding: 75px 0;
+  background: #fff1c7;
+}
+
+.riddles-page__family-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.riddles-page__family-content span {
+  display: inline-block;
+  margin-bottom: 16px;
+  color: #94751e;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.riddles-page__family-content h2 {
+  margin-bottom: 20px;
+  color: #3f3659;
+  font-size: clamp(26px, 4vw, 36px);
+  line-height: 1.3;
+}
+
+.riddles-page__family-content p {
+  color: #716445;
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1000px) {
+  .riddles-page__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 650px) {
+  .riddles-page__container {
+    width: calc(100% - 36px);
+  }
+
+  .riddles-page__hero {
+    padding: 65px 0;
+  }
+
+  .riddles-page__hero p {
+    font-size: 16px;
+  }
+
+  .riddles-page__activities {
+    padding: 65px 0 85px;
+  }
+
+  .riddles-page__grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .riddles-page__family {
+    padding: 55px 0;
+  }
+}

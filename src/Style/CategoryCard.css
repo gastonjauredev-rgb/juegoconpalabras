@@ -1,0 +1,185 @@
+
+/* =========================================
+   CATEGORY CARD
+========================================= */
+
+.category-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+  border-radius: 26px;
+  background: var(--color-surface);
+  box-shadow: 0 12px 36px rgba(52, 49, 76, 0.05);
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.category-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 20px 44px rgba(52, 49, 76, 0.11);
+}
+
+/* ILUSTRACIÓN */
+
+.category-card__illustration {
+  position: relative;
+  display: grid;
+  place-items: center;
+  min-height: 210px;
+  overflow: hidden;
+}
+
+.category-card__illustration::before,
+.category-card__illustration::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.category-card__illustration::before {
+  width: 170px;
+  height: 170px;
+  top: -65px;
+  right: -45px;
+}
+
+.category-card__illustration::after {
+  width: 110px;
+  height: 110px;
+  bottom: -45px;
+  left: -25px;
+}
+
+.category-card__icon {
+  position: relative;
+  z-index: 1;
+  font-size: 94px;
+  line-height: 1;
+  transition: transform 0.3s ease;
+}
+
+.category-card:hover .category-card__icon {
+  transform: rotate(-8deg) scale(1.08);
+}
+
+/* =========================================
+   VARIANTES DE COLOR
+========================================= */
+
+.category-card--coral .category-card__illustration {
+  background: var(--color-coral);
+}
+
+.category-card--lavender .category-card__illustration {
+  background: var(--color-purple);
+}
+
+.category-card--yellow .category-card__illustration {
+  background: var(--color-yellow);
+}
+
+.category-card--mint .category-card__illustration {
+  background: var(--color-turquoise);
+}
+
+/* =========================================
+   CONTENIDO
+========================================= */
+
+.category-card__content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 30px;
+}
+
+.category-card__title {
+  margin-bottom: 14px;
+  color: var(--color-text);
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 1.25;
+}
+
+.category-card__description {
+  margin-bottom: 28px;
+  color: var(--color-text-secondary);
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.category-card__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: auto;
+  color: var(--color-coral);
+  font-size: 15px;
+  font-weight: 700;
+  transition: gap 0.2s ease;
+}
+
+.category-card__link:hover {
+  gap: 18px;
+}
+
+.category-card__link:focus-visible {
+  outline: 3px solid var(--color-purple);
+  outline-offset: 5px;
+  border-radius: 4px;
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 480px) {
+  .category-card__illustration {
+    min-height: 185px;
+  }
+
+  .category-card__icon {
+    font-size: 78px;
+  }
+
+  .category-card__content {
+    padding: 25px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .category-card,
+  .category-card__icon,
+  .category-card__link {
+    transition: none;
+  }
+}
+.category-card__image {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 210px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.category-card:hover .category-card__image {
+  transform: scale(1.05);
+}
+
+@media (max-width: 480px) {
+  .category-card__image {
+    height: 185px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .category-card__image {
+    transition: none;
+  }
+}

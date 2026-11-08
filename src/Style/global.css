@@ -1,0 +1,76 @@
+
+/* =========================================
+   JUEGO CON PALABRAS Y CON MI CUERPO
+   ESTILOS GLOBALES
+========================================= */
+
+:root {
+  /* COLORES PRINCIPALES */
+  --color-coral: #ff625c;
+  --color-yellow: #ffc83d;
+  --color-turquoise: #16c9a5;
+  --color-purple: #8b5cf6;
+  --color-blue: #3485ff;
+
+  /* FONDOS */
+  --color-background: #b5ebd8;
+  --color-surface: #ffffff;
+  --color-background-soft: #d9f5eb;
+
+  /* TEXTOS */
+  --color-text: #292640;
+  --color-text-secondary: #626078;
+
+  /* BORDES */
+  --color-border: #e8e5f0;
+}
+
+/* =========================================
+   RESET
+========================================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* =========================================
+   BODY
+========================================= */
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  background-color: var(--color-background);
+  color: var(--color-text);
+}
+
+/* =========================================
+   ELEMENTOS GENERALES
+========================================= */
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}

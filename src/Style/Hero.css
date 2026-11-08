@@ -1,0 +1,251 @@
+
+/* =========================================
+   HERO
+========================================= */
+
+.hero {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background: linear-gradient(
+    135deg,
+    #fff0c6 0%,
+    #ffe0db 48%,
+    #e8dcff 100%
+  );
+}
+
+.hero__container {
+  width: min(1240px, calc(100% - 48px));
+  min-height: 590px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  align-items: center;
+  gap: 48px;
+  padding: 80px 0;
+}
+
+/* =========================================
+   CONTENIDO
+========================================= */
+
+.hero__content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero__eyebrow {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 18px;
+  margin-bottom: 24px;
+  border-radius: 100px;
+  background: #ffffff;
+  color: var(--color-coral);
+  font-size: 14px;
+  font-weight: 700;
+  box-shadow: 0 5px 20px rgba(80, 55, 75, 0.05);
+}
+
+.hero__title {
+  margin-bottom: 20px;
+  font-size: clamp(42px, 5vw, 72px);
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -2px;
+  color: var(--color-text);
+}
+
+.hero__title span {
+  color: var(--color-coral);
+}
+
+.hero__subtitle {
+  margin-bottom: 20px;
+  font-size: 23px;
+  font-weight: 700;
+  color: var(--color-purple);
+}
+
+.hero__description {
+  max-width: 520px;
+  margin-bottom: 32px;
+  font-size: 17px;
+  line-height: 1.8;
+  color: var(--color-text-secondary);
+}
+
+.hero__button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  padding: 17px 26px;
+  border: none;
+  border-radius: 16px;
+  background: var(--color-coral);
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 700;
+  box-shadow: 0 10px 24px rgba(255, 98, 92, 0.25);
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.hero__button:hover {
+  transform: translateY(-3px);
+  background: #ed4e49;
+}
+
+/* =========================================
+   ZONA VISUAL
+========================================= */
+
+.hero__visual {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+}
+
+.hero__illustration {
+  position: relative;
+  width: min(400px, 100%);
+  aspect-ratio: 1;
+  display: grid;
+  place-items: center;
+  border-radius: 45% 55% 55% 45%;
+  background: #76e8d0;
+  animation: heroFloat 6s ease-in-out infinite;
+}
+
+.hero__illustration-main {
+  font-size: 135px;
+}
+
+.hero__illustration-book,
+.hero__illustration-music,
+.hero__illustration-star,
+.hero__illustration-hands {
+  position: absolute;
+  display: grid;
+  place-items: center;
+  width: 76px;
+  height: 76px;
+  border-radius: 22px;
+  background: #ffffff;
+  font-size: 35px;
+  box-shadow: 0 12px 30px rgba(60, 50, 80, 0.08);
+}
+
+.hero__illustration-book {
+  top: 5%;
+  left: -5%;
+  transform: rotate(-12deg);
+}
+
+.hero__illustration-music {
+  top: 10%;
+  right: -5%;
+  transform: rotate(12deg);
+}
+
+.hero__illustration-star {
+  bottom: 10%;
+  left: -8%;
+  transform: rotate(10deg);
+}
+
+.hero__illustration-hands {
+  bottom: 4%;
+  right: 0;
+  transform: rotate(-10deg);
+}
+
+/* =========================================
+   ANIMACIONES
+========================================= */
+
+@keyframes heroFloat {
+  0%, 100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 900px) {
+  .hero__container {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 70px 0;
+    text-align: center;
+  }
+
+  .hero__description {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero__visual {
+    min-height: 320px;
+  }
+
+  .hero__illustration {
+    width: 300px;
+  }
+
+  .hero__illustration-main {
+    font-size: 105px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero__container {
+    width: calc(100% - 36px);
+    padding: 55px 0;
+  }
+
+  .hero__title {
+    font-size: 40px;
+    letter-spacing: -1px;
+  }
+
+  .hero__subtitle {
+    font-size: 19px;
+  }
+
+  .hero__description {
+    font-size: 15px;
+  }
+
+  .hero__illustration {
+    width: 240px;
+  }
+
+  .hero__illustration-main {
+    font-size: 85px;
+  }
+
+  .hero__illustration-book,
+  .hero__illustration-music,
+  .hero__illustration-star,
+  .hero__illustration-hands {
+    width: 55px;
+    height: 55px;
+    font-size: 27px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero__illustration {
+    animation: none;
+  }
+}

@@ -1,0 +1,123 @@
+
+export const stories = [
+  {
+    id: "IbCDkUOW5jM",
+    youtubeId: "IbCDkUOW5jM",
+    title: "La Cenicienta",
+    description: "Una historia clásica sobre la bondad, los sueños y la esperanza.",
+  },
+  {
+    id: "Q5BHVLag-8Y",
+    youtubeId: "Q5BHVLag-8Y",
+    title: "Blancanieves y los siete enanitos",
+    description: "Una aventura de amistad, magia y personajes inolvidables.",
+  },
+  {
+    id: "-YK1K2ERweY",
+    youtubeId: "-YK1K2ERweY",
+    title: "Rapunzel",
+    description: "Una historia de aventuras, valentía y descubrimientos.",
+  },
+  {
+    id: "GWDJCYneksQ",
+    youtubeId: "GWDJCYneksQ",
+    title: "La bella y la bestia",
+    description: "Un cuento sobre la amistad y el valor de mirar más allá de las apariencias.",
+  },
+  {
+    id: "fISWZKd99Bo",
+    youtubeId: "fISWZKd99Bo",
+    title: "La bella durmiente",
+    description: "Un cuento clásico lleno de magia y fantasía.",
+  },
+  {
+    id: "AB6n1hpI2cs",
+    youtubeId: "AB6n1hpI2cs",
+    title: "La sirenita",
+    description: "Una aventura fantástica que nos invita a imaginar otros mundos.",
+  },
+  {
+    id: "vobsGFo55ks",
+    youtubeId: "vobsGFo55ks",
+    title: "La princesa y el guisante",
+    description: "Una historia curiosa para escuchar y conversar.",
+  },
+  {
+    id: "1BJecN-s158",
+    youtubeId: "1BJecN-s158",
+    title: "Los tres cerditos",
+    description: "Tres hermanos construyen sus casas y enfrentan un desafío.",
+  },
+  {
+    id: "_lDMRcmPEKE",
+    youtubeId: "_lDMRcmPEKE",
+    title: "El patito feo",
+    description: "Un cuento sobre las diferencias, el crecimiento y la aceptación.",
+  },
+  {
+    id: "yMSEjiGpuTo",
+    youtubeId: "yMSEjiGpuTo",
+    title: "El león y el ratón",
+    description: "Una fábula sobre la solidaridad y la importancia de ayudar.",
+  },
+  {
+    id: "KDfI0dnUfjM",
+    youtubeId: "KDfI0dnUfjM",
+    title: "La liebre y la tortuga",
+    description: "Una historia para conversar sobre la paciencia y la perseverancia.",
+  },
+  {
+    id: "7Ou5MfCRO5Y",
+    youtubeId: "7Ou5MfCRO5Y",
+    title: "Los músicos de Bremen",
+    description: "Cuatro animales emprenden una aventura juntos.",
+  },
+  {
+    id: "H-32pOjheRs",
+    youtubeId: "H-32pOjheRs",
+    title: "La cigarra y la hormiga",
+    description: "Una fábula para reflexionar sobre el esfuerzo y la previsión.",
+  },
+  {
+    id: "s-D3B03PSEc",
+    youtubeId: "s-D3B03PSEc",
+    title: "La gallinita roja",
+    description: "Una historia sobre el trabajo compartido y la colaboración.",
+  },
+  {
+    id: "EQa_IySpBx8",
+    youtubeId: "EQa_IySpBx8",
+    title: "Pinocho",
+    description: "Las aventuras de un muñeco de madera que sueña con ser un niño.",
+  },
+  {
+    id: "5_axoE163Fw",
+    youtubeId: "5_axoE163Fw",
+    title: "Hansel y Gretel",
+    description: "Dos hermanos viven una aventura en un bosque misterioso.",
+  },
+  {
+    id: "YrnaRS62X_0",
+    youtubeId: "YrnaRS62X_0",
+    title: "Caperucita Roja",
+    description: "Una historia clásica sobre un paseo por el bosque.",
+  },
+  {
+    id: "Wjqu2dgxI5c",
+    youtubeId: "Wjqu2dgxI5c",
+    title: "El gato con botas",
+    description: "Un gato muy ingenioso protagoniza una aventura sorprendente.",
+  },
+  {
+    id: "Ejh0gqh0Rec",
+    youtubeId: "Ejh0gqh0Rec",
+    title: "Ricitos de Oro y los tres ositos",
+    description: "Una niña descubre una casa muy particular en el bosque.",
+  },
+  {
+    id: "BfyENbLkI-s",
+    youtubeId: "BfyENbLkI-s",
+    title: "Alicia en el país de las maravillas",
+    description: "Un viaje imaginario lleno de personajes y situaciones sorprendentes.",
+  },
+];

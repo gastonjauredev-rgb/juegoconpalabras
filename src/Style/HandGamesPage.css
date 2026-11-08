@@ -1,0 +1,151 @@
+
+/* =========================================
+   HAND GAMES PAGE
+========================================= */
+
+.hand-games-page {
+  width: 100%;
+  min-height: 100vh;
+  background: #faf9f6;
+}
+
+.hand-games-page__container {
+  width: min(1240px, calc(100% - 48px));
+  margin: 0 auto;
+}
+
+/* HERO */
+
+.hand-games-page__hero {
+  padding: 90px 0;
+  background: linear-gradient(
+    135deg,
+    #dff8ec 0%,
+    #d4f2e5 55%,
+    #e8f9f0 100%
+  );
+}
+
+.hand-games-page__eyebrow {
+  display: inline-block;
+  margin-bottom: 18px;
+  color: #28775a;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.hand-games-page__hero h1 {
+  margin-bottom: 22px;
+  color: #3f3659;
+  font-size: clamp(38px, 5vw, 64px);
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.hand-games-page__hero p {
+  max-width: 720px;
+  color: #527b69;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+/* ACTIVIDADES */
+
+.hand-games-page__activities {
+  padding: 90px 0 110px;
+}
+
+.hand-games-page__heading {
+  max-width: 780px;
+  margin-bottom: 45px;
+}
+
+.hand-games-page__heading h2 {
+  margin-bottom: 18px;
+  color: #3f3659;
+  font-size: clamp(28px, 4vw, 40px);
+  line-height: 1.25;
+}
+
+.hand-games-page__heading p {
+  color: #777386;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.hand-games-page__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: stretch;
+  gap: 28px;
+}
+
+/* FAMILIAS */
+
+.hand-games-page__family {
+  padding: 75px 0;
+  background: #dff5e9;
+}
+
+.hand-games-page__family-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.hand-games-page__family-content span {
+  display: inline-block;
+  margin-bottom: 16px;
+  color: #28775a;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.hand-games-page__family-content h2 {
+  margin-bottom: 20px;
+  color: #3f3659;
+  font-size: clamp(26px, 4vw, 36px);
+  line-height: 1.3;
+}
+
+.hand-games-page__family-content p {
+  color: #527b69;
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1000px) {
+  .hand-games-page__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 650px) {
+  .hand-games-page__container {
+    width: calc(100% - 36px);
+  }
+
+  .hand-games-page__hero {
+    padding: 65px 0;
+  }
+
+  .hand-games-page__hero p {
+    font-size: 16px;
+  }
+
+  .hand-games-page__activities {
+    padding: 65px 0 85px;
+  }
+
+  .hand-games-page__grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .hand-games-page__family {
+    padding: 55px 0;
+  }
+}
