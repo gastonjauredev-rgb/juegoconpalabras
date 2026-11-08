@@ -11,7 +11,10 @@ function CategoryCard({
   buttonText,
 }) {
   return (
-    <article className={`category-card category-card--${color}`}>
+    <Link
+      to={path}
+      className={`category-card category-card--${color}`}
+    >
       <div className="category-card__illustration">
         <img
           src={image}
@@ -27,12 +30,12 @@ function CategoryCard({
           {description}
         </p>
 
-        <Link to={path} className="category-card__link">
+        <span className="category-card__link">
           {buttonText}
           <span aria-hidden="true">→</span>
-        </Link>
+        </span>
       </div>
-    </article>
+    </Link>
   );
 }
 
